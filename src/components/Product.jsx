@@ -2,8 +2,8 @@ import React from "react";
 import Rating from "./Rating";
 function Product({ product }) {
   return (
-    <div key={product.id} className="card">
-      <a href={`/product/${product._id}`}>
+    <div key={product._id} className="card">
+      <a href={`/product/${product.id}`}>
         <img className="medium" src={product.image} alt={product.name} />
       </a>
       <div className="card-body">
